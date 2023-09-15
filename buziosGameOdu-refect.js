@@ -1,49 +1,54 @@
 // Criar um array com os nomes dos 16 ODUS principais
-var odus = ["Okanran", "Ejiokô", "Etá Ogundá", "Irossun", "Oxê", "Obará", "Odi", "Ejioníle", "Ossá", "Ofun", "Owarin", "Ejilaxeborá", "Ejiologbon", "Iká", "Obeogundá", "Ejibê ou Aláfia"];
+const odusList = ["Okanran", "Ejiokô", "Etá Ogundá", "Irossun", "Oxê", "Obará", "Odi", "Ejioníle", "Ossá", "Ofun", "Owarin", "Ejilaxeborá", "Ejiologbon", "Iká", "Obeogundá", "Ejibê ou Aláfia"];
 
 // Criar um array com 16 búzios, cada um com um valor booleano que indica se está aberto (true) ou fechado (false)
-var buzios = [];
 
 // Criar uma função que sorteia aleatoriamente os valores dos búzios
 function sortearBuzios() {
+    const buzios = [];
   // Percorrer o array de búzios
-  for (var i = 0; i < 16; i++) {
+  for (let i = 0; i < 16; i += 1) {
     // Gerar um número aleatório entre 0 e 1
-    var numero = Math.random();
+    let numero = Math.random();
     // Se o número for menor que 0.5, o búzio está aberto
     if (numero < 0.5) {
-      buzios[i] = true;
+      buzios.push(true);
     }
     // Se o número for maior ou igual a 0.5, o búzio está fechado
     else {
-      buzios[i] = false;
+    //   buzios[i] = false;
+      buzios.push(false);
     }
   }
+//   console.log(buzios);
+  return buzios;
 }
 
 // Criar uma função que conta quantos búzios estão abertos
-function contarBuziosAbertos() {
+function contarBuziosAbertos(buzios) {
   // Criar uma variável para armazenar o contador
-  var contador = 0;
+  let contador = 0;
   // Percorrer o array de búzios
-  for (var i = 0; i < 16; i++) {
+  for (let i = 0; i < 16; i += 1) {
     // Se o búzio está aberto, incrementar o contador
     if (buzios[i]) {
-      contador++;
+      contador += 1;
     }
   }
   // Retornar o contador
+//   console.log(contador);
   return contador;
 }
 
 // Criar uma função que interpreta o resultado do sorteio e mostra o ODU correspondente
-function mostrarODU() {
+function mostrarODU(odus) {
   // Chamar a função que sorteia os búzios
-  sortearBuzios();
+  const buziosArray = sortearBuzios();
   // Chamar a função que conta quantos búzios estão abertos
-  var abertos = contarBuziosAbertos();
+  const abertos = contarBuziosAbertos(buziosArray);
+//   console.log(odus);
   // Criar uma variável para armazenar o nome do ODU
-  var odu;
+//   let odu;
   // Usar uma estrutura switch para atribuir o ODU de acordo com o número de búzios abertos
 //   switch (abertos) {
 //     case 0:
@@ -102,8 +107,9 @@ function mostrarODU() {
 //   }
   // Mostrar o resultado na tela
   console.log(`O número de búzios abertos é:${abertos}`);
+//   console.log(`O ODU que responde é: ${odu}`); 
   console.log(`O ODU que responde é: ${odus[abertos]}`);
 }
 
 // Chamar a função que mostra o ODU
-mostrarODU();
+mostrarODU(odusList);
