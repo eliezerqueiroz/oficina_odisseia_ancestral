@@ -1,6 +1,10 @@
 **Oficina de Programação - Parte 2: Fundamentos de Programação**
 
-**Duração:** 50 minutos
+**Duração:** 50 minutos.
+
+**Editor online:** [Playcode - Online Javascript Editor](https://playcode.io/1598832).
+
+**Repositorio:** [Oficina odisseia ancestral](https://github.com/eliezerqueiroz/oficina_odisseia_ancestral/tree/main)
 
 **Script:**
 
@@ -63,6 +67,6 @@
    - Resumo dos principais conceitos abordados.
    - Oportunidade para perguntas e esclarecimentos.
 
-**Desafio Extra:** Peça aos participantes para modificarem algo no código. Por exemplo alterar a função `mostrarODU()` para que, além de mostrar o resultado o ODU também exicir o seu significado.
+**Desafio Extra:** Peça aos participantes para modificarem algo no código. Por exemplo alterar a função `mostrarODU()` para que, além de mostrar o resultado o ODU também exibir o seu significado.
 
 Lembre-se de incentivar a participação ativa dos alunos, fazer perguntas para verificar a compreensão e proporcionar oportunidades para a prática dos conceitos apresentados.

@@ -1,6 +1,22 @@
 // Criar um array com os nomes dos 16 ODUS principais
-var odus = ["Okanran", "Ejiokô", "Etá Ogundá", "Irossun", "Oxê", "Obará", "Odi", "Ejioníle", "Ossá", "Ofun", "Owarin", "Ejilaxeborá", "Ejiologbon", "Iká", "Obeogundá", "Ejibê ou Aláfia"];
-
+var odus = [
+  'Okanran', //Barulho e confusão
+  'Ejiokô', //Calma e decisão
+  'Etá Ogundá', //Coragem e criatividade
+  'Irossun',//Tranquilidade e objetividade
+  'Oxê',//Amor e alegria
+  'Obará',//Justiça e prosperidade
+  'Odi',//Doença e cura
+  'Ejioníle',//Pureza e sabedoria
+  'Ossá',// Transformação e renovação
+  'Ofun',//Luz e conhecimento
+  'Owarin',//Morte e renascimento
+  'Ejilaxeborá',//Equilíbrio e harmonia
+  'Ejiologbon',//Saúde e magia
+  'Iká',//Poder e conquista
+  'Obeogundá',//Caça e guerra
+  'Ejibê ou Aláfia',//Felicidade e prosperidade
+];
 // Criar um array com 16 búzios, cada um com um valor booleano que indica se está aberto (true) ou fechado (false)
 var buzios = [];
 
