@@ -1,31 +1,31 @@
 // Criar um array com os nomes dos 16 ODUS principais
-var odus = [
-  'Okanran', //Barulho e confusão
-  'Ejiokô', //Calma e decisão
-  'Etá Ogundá', //Coragem e criatividade
-  'Irossun',//Tranquilidade e objetividade
-  'Oxê',//Amor e alegria
-  'Obará',//Justiça e prosperidade
-  'Odi',//Doença e cura
-  'Ejioníle',//Pureza e sabedoria
-  'Ossá',// Transformação e renovação
-  'Ofun',//Luz e conhecimento
-  'Owarin',//Morte e renascimento
-  'Ejilaxeborá',//Equilíbrio e harmonia
-  'Ejiologbon',//Saúde e magia
-  'Iká',//Poder e conquista
-  'Obeogundá',//Caça e guerra
-  'Ejibê ou Aláfia',//Felicidade e prosperidade
+const odus = [
+  'Okanran', //Mistério, o desconhecido
+  'Ejiokô', //Dualidade, oposição, dualidade da vida
+  'Etá Ogundá', //Aprendizado, conhecimento, sabedoria
+  'Irossun',//Luz, inspiração, esclarecimento
+  'Oxê',//Paciência, perseverança, espera
+  'Obará',//Armadilha, obstáculo
+  'Odi',//Transformação pessoal, mudança
+  'Ejioníle',//Início, origem, princípio
+  'Ossá',//Dificuldade, desafio, superação
+  'Ofun',//Riqueza, abundância, prosperidade
+  'Owarin',//Divisão, separação, discordância
+  'Ejilaxeborá',//Equilíbrio, justiça, correção
+  'Ejiologbon',//Introspecção, reflexão, sabedoria
+  'Iká',//Revolução, transformação, reviravolta
+  'Obeogundá',//Amor, compaixão, empatia
+  'Ejibê ou Aláfia',//Realização, sucesso, êxito
 ];
 // Criar um array com 16 búzios, cada um com um valor booleano que indica se está aberto (true) ou fechado (false)
-var buzios = [];
+const buzios = [];
 
 // Criar uma função que sorteia aleatoriamente os valores dos búzios
 function sortearBuzios() {
   // Percorrer o array de búzios
-  for (var i = 0; i < 16; i++) {
+  for (let i = 0; i < 16; i++) {
     // Gerar um número aleatório entre 0 e 1
-    var numero = Math.random();
+    let numero = Math.random();
     // Se o número for menor que 0.5, o búzio está aberto
     if (numero < 0.5) {
       buzios[i] = true;
